@@ -11,8 +11,11 @@ public class enemy : MonoBehaviour
     private Vector2 dir;
     private SpriteRenderer _rend;
     void Start()
-    {
-        
+    {  // private GameObject target;
+       // target = FindObjectOfType<MarioScript>(). gameObject; //para q el enemigo siga al protagonista 
+       // private void OnCollisionEnter2D(Collision2D collision)
+       
+       
     }
 
     // Update is called once per frame
@@ -30,4 +33,4 @@ public class enemy : MonoBehaviour
 
     }
 
-}
+} // singleton (solo existe una instancia de esa clase en todo el juegue y si vienen nuevos se destruyen y ademas la instancia es una facilona (accesible a todo e mundo)
