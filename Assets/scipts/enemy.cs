@@ -28,7 +28,7 @@ public class enemy : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<MarioScript>()) //LO QUE SE CHOCA CON EL ENEMIGO ES EL DESPERTADOR 
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //reinicia
+            gamemanager.instance.LoadScene(SceneManager.GetActiveScene().name); // reinicia y limpia la escena de audios para que no suene nuevamente cada vex que mueras
         }
 
     }

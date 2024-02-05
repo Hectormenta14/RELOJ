@@ -20,7 +20,8 @@ public class dethzone : MonoBehaviour
     {
        if (collision.GetComponent<MarioScript>())
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //reinicia
+            gamemanager.instance.LoadScene(SceneManager.GetActiveScene().name); // reinicia y limpia la escena de objetos y audios para que no suene nuevamente cada vez que mueras
+         
         }
     }
 }

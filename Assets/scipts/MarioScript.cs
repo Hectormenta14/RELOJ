@@ -9,6 +9,7 @@ public class MarioScript : MonoBehaviour
     public KeyCode rightKey, leftKey, jumpKey;
     public float speed, rayDistance, jumpForce;
     public LayerMask groundMask; //mascara de colisiones con la q el rayo se va a colisionar 
+    public AudioClip jumpClip;
 
     private Rigidbody2D rb;
     private SpriteRenderer _rend;
@@ -72,8 +73,11 @@ public class MarioScript : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, 0); // hace que el personaje mantenga siempre la misma potencia de salto 
             rb.AddForce(Vector2.up * jumpForce * rb.gravityScale * rb.drag, ForceMode2D.Impulse); // el rb.drag hace que el peronaje no deslice
             
+            audiomanager.instance.PlayAudio(jumpClip, "jumpSound");
+            
         }
         _animator.SetBool("iswalking", grand);
+        
     }
     private bool IsGrounded() // se lanza un rato desde el personaje hace abajo y va a detectar la mascara de colisiones q hemos establecido (detectar suelo)
     {
