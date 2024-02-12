@@ -20,7 +20,7 @@ public class UPDATETEXT : MonoBehaviour
         switch (varieble)
         {
             case gamemanager.GameManagerVariables.TIME:
-                textComponent.text = "Time: " + gamemanager.instance.GetTime();
+                textComponent.text = "Time: " + gamemanager.instance.GetTime().ToString("0.00"); //el tostring para que devuelva solo 2 decimales en cadena
                 break;
             case gamemanager.GameManagerVariables.POINTS:
                 textComponent.text = "Points: " + gamemanager.instance.GetPoint();
