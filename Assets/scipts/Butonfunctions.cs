@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Butonfunctions : MonoBehaviour
 {
+   
     // Start is called before the first frame update
      public void ExitGame()
     {
@@ -12,6 +13,7 @@ public class Butonfunctions : MonoBehaviour
     public void LoadScene(string SeneName)
     {
         gamemanager.instance.LoadScene(SeneName);
+        
     }
   
 }

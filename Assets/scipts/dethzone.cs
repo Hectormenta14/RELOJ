@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class dethzone : MonoBehaviour
 {
+    public AudioClip deathClip;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class dethzone : MonoBehaviour
        if (collision.GetComponent<MarioScript>())
         {
             gamemanager.instance.LoadScene(SceneManager.GetActiveScene().name); // reinicia y limpia la escena de objetos y audios para que no suene nuevamente cada vez que mueras
-         
+            audiomanager.instance.PlayAudio(deathClip, "deathSound");
         }
     }
 }

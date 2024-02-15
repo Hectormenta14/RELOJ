@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class enemy : MonoBehaviour
   
 {
+   public AudioClip deathClip;
     // Start is called before the first frame update
     public Transform player;
     private Vector2 dir;
@@ -29,6 +30,7 @@ public class enemy : MonoBehaviour
         if (collision.gameObject.GetComponent<MarioScript>()) //LO QUE SE CHOCA CON EL ENEMIGO ES EL DESPERTADOR 
         {
             gamemanager.instance.LoadScene(SceneManager.GetActiveScene().name); // reinicia y limpia la escena de audios para que no suene nuevamente cada vex que mueras
+            audiomanager.instance.PlayAudio(deathClip, "deathSound");
         }
 
     }

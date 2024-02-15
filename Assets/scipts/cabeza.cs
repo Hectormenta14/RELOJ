@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class cabeza : MonoBehaviour
 {
+    public AudioClip cabezaClip;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<MarioScript>())
+        if (collision.GetComponent<MarioScript>())
         {
-            Destroy(transform.parent.gameObject); 
+            collision.gameObject.GetComponent<Puntuacion>().agarrar();
+            Destroy(transform.parent.gameObject);
+            audiomanager.instance.PlayAudio(cabezaClip, "deathSound");
         }
     }
 }

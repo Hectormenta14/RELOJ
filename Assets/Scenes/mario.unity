@@ -143,6 +143,7 @@ MonoBehaviour:
   Efecto: {fileID: 0}
   CantidadPuntos: 0
   Puntaje: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: b8fa427c2f5c1e441bbecd5c1e29ed52, type: 3}
 --- !u!61 &4154909
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -597,6 +598,7 @@ MonoBehaviour:
   Efecto: {fileID: 0}
   CantidadPuntos: 0
   Puntaje: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: b8fa427c2f5c1e441bbecd5c1e29ed52, type: 3}
 --- !u!61 &205768996
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2650,6 +2652,7 @@ MonoBehaviour:
   Efecto: {fileID: 0}
   CantidadPuntos: 0
   Puntaje: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: b8fa427c2f5c1e441bbecd5c1e29ed52, type: 3}
 --- !u!61 &481181369
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2949,6 +2952,7 @@ MonoBehaviour:
   Efecto: {fileID: 0}
   CantidadPuntos: 0
   Puntaje: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: b8fa427c2f5c1e441bbecd5c1e29ed52, type: 3}
 --- !u!61 &654355295
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3282,6 +3286,7 @@ MonoBehaviour:
   Efecto: {fileID: 0}
   CantidadPuntos: 0
   Puntaje: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: b8fa427c2f5c1e441bbecd5c1e29ed52, type: 3}
 --- !u!61 &888413157
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3463,6 +3468,7 @@ MonoBehaviour:
   Efecto: {fileID: 0}
   CantidadPuntos: 0
   Puntaje: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: b8fa427c2f5c1e441bbecd5c1e29ed52, type: 3}
 --- !u!61 &973909760
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3528,6 +3534,7 @@ MonoBehaviour:
   Efecto: {fileID: 0}
   CantidadPuntos: 0
   Puntaje: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: b8fa427c2f5c1e441bbecd5c1e29ed52, type: 3}
 --- !u!61 &1025882906
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3741,6 +3748,7 @@ MonoBehaviour:
   Efecto: {fileID: 0}
   CantidadPuntos: 0
   Puntaje: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: b8fa427c2f5c1e441bbecd5c1e29ed52, type: 3}
 --- !u!61 &1045828620
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3918,6 +3926,7 @@ MonoBehaviour:
   Efecto: {fileID: 0}
   CantidadPuntos: 0
   Puntaje: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: b8fa427c2f5c1e441bbecd5c1e29ed52, type: 3}
 --- !u!61 &1159897721
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3974,6 +3983,7 @@ GameObject:
   - component: {fileID: 1166555293}
   - component: {fileID: 1166555292}
   - component: {fileID: 1166555294}
+  - component: {fileID: 1166555295}
   m_Layer: 0
   m_Name: piedras_9
   m_TagString: Untagged
@@ -4077,7 +4087,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4093,6 +4103,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.34, y: 0.36}
   m_EdgeRadius: 0
+--- !u!114 &1166555295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166555291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3067e42c561acd449a5f31d496d12f8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winClip: {fileID: 8300000, guid: d41eba2edab4dce48af5e9314c7c9c6c, type: 3}
 --- !u!1001 &1185027530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4177,6 +4200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ff4cf641211be545bae74b5cbb755d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathClip: {fileID: 8300000, guid: cf447e5d45e6f7648a2abaaf22f00338, type: 3}
   player: {fileID: 463028086}
 --- !u!50 &1185820686
 Rigidbody2D:
@@ -4222,6 +4246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79ede1b1a77d5c489bb57b48ccf45fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cabezaClip: {fileID: 8300000, guid: d94d6534c4bb1e24fab251f0eddd1cb2, type: 3}
 --- !u!1 &1389086577 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2056952277816654707, guid: 521481d08dca23f4db65d0d250f1ad75, type: 3}
@@ -4242,6 +4267,7 @@ MonoBehaviour:
   Efecto: {fileID: 0}
   CantidadPuntos: 0
   Puntaje: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: b8fa427c2f5c1e441bbecd5c1e29ed52, type: 3}
 --- !u!61 &1389086581
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4430,6 +4456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d26eadbbaa936154b8fad1dced0a5288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathClip: {fileID: 8300000, guid: cf447e5d45e6f7648a2abaaf22f00338, type: 3}
 --- !u!1 &1463449912 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2056952277816654707, guid: 521481d08dca23f4db65d0d250f1ad75, type: 3}
@@ -4450,6 +4477,7 @@ MonoBehaviour:
   Efecto: {fileID: 0}
   CantidadPuntos: 0
   Puntaje: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: b8fa427c2f5c1e441bbecd5c1e29ed52, type: 3}
 --- !u!61 &1463449916
 BoxCollider2D:
   m_ObjectHideFlags: 0
