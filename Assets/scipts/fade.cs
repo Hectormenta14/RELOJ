@@ -25,7 +25,7 @@ public class fade : MonoBehaviour
         }
         StartCoroutine(FadeIn());
     }
-    IEnumerator FadeIn()//para que el alpha se vaya aumentando poco a poco 
+    IEnumerator FadeIn() //para que el alpha se vaya aumentando poco a poco 
     {
         Color color = _rend.color; // para guardar los parametros del color actual del objeto 
         for (float alpha = 0f; alpha <= 1; alpha += 0.01f)

@@ -17,6 +17,6 @@ public class Puntuacion : MonoBehaviour
     }
     public void agarrar()
     {
-        monedas += 10;
+        monedas += 10; // sumara 10 puntos a cada objecto asugnado que choque con pumtuacion
     }
 }

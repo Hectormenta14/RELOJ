@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Butonfunctions : MonoBehaviour
 {
-   
+
     // Start is called before the first frame update
-     public void ExitGame()
+    public void ExitGame()
     {
-        gamemanager.instance.ExitGame(); 
+        gamemanager.instance.ExitGame();
     }
     public void LoadScene(string SeneName)
     {
-        gamemanager.instance.LoadScene(SeneName);
-        
+        gamemanager.instance.LoadScene(SeneName); // al pulsar el boton cambiara de escena
+
     }
-  
+
 }

@@ -2490,6 +2490,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   jumpClip: {fileID: 8300000, guid: 6932b43e94888674494a8e44e1ea0890, type: 3}
+  maxJumps: 2
 --- !u!50 &463028084
 Rigidbody2D:
   serializedVersion: 4
@@ -2613,7 +2614,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463028081}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 863dbffff65e19243b59560f1ea0552b, type: 3}
   m_Name: 

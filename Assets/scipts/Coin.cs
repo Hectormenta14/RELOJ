@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-     [SerializeField] private GameObject Efecto;
+    [SerializeField] private GameObject Efecto;
     [SerializeField] private float CantidadPuntos;
     [SerializeField] private Puntuacion Puntaje;
     public AudioClip coinClip;
@@ -13,15 +13,13 @@ public class Coin : MonoBehaviour
     {
         if (other.GetComponent<MarioScript>())
         {
-            other.gameObject.GetComponent<Puntuacion>().agarrar();
+            other.gameObject.GetComponent<Puntuacion>().agarrar(); // la moneda sumara puntos y se destruir al entrar en contacto con Puntuacion
             Destroy(gameObject);
-            audiomanager.instance.PlayAudio(coinClip, "coinSound");
+            audiomanager.instance.PlayAudio(coinClip, "coinSound"); //la moneda sonara
         }
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
 }

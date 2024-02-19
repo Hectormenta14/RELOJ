@@ -9,9 +9,9 @@ public class cabeza : MonoBehaviour
     {
         if (collision.GetComponent<MarioScript>())
         {
-            collision.gameObject.GetComponent<Puntuacion>().agarrar();
+            collision.gameObject.GetComponent<Puntuacion>().agarrar(); // al chocar con puntuacion sumara puntos y se destruira
             Destroy(transform.parent.gameObject);
-            audiomanager.instance.PlayAudio(cabezaClip, "deathSound");
+            audiomanager.instance.PlayAudio(cabezaClip, "deathSound"); // el enemigo al matar sonara 
         }
     }
 }
